@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-uplate-plugins" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>UpLate</name>
+    <js-module name="UpLate" src="www/UpLate.js">
+        <clobbers target="uplate" />
+    </js-module>
+    <platform name="ios">
+  <config-file target="config.xml" parent="/*">
+    <feature name="UpLate">
+      <param name="ios-package" value="UpLate" />
+    </feature>
+  </config-file>
+  <source-file src="src/ios/UpLate.swift" />
+</platform>
+</plugin>

@@ -1,0 +1,19 @@
+{
+  "name": "uplate",
+  "version": "1.0.0",
+  "description": "up to late doing this",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessetello/UpLate.git"
+  },
+  "author": "jesse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessetello/UpLate/issues"
+  },
+  "homepage": "https://github.com/jessetello/UpLate#readme"
+}
