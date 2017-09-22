@@ -16,8 +16,7 @@ import Foundation
         )
         let msg = command.arguments[0] as? String ?? ""
         if msg.characters.count > 0 {
-            let toastController: UIAlertController =
-                UIAlertController(
+            let toastController = UIAlertController(
                     title: "TEST",
                     message: msg,
                     preferredStyle: .alert
@@ -51,11 +50,21 @@ import Foundation
             status: CDVCommandStatus_ERROR
         )
         
-        let vc = UIAlertController(title: "Test", message: "Test", preferredStyle: .alert)
+        let vc = UIAlertController(
+            title: "Test",
+            message: "Test",
+            preferredStyle: .alert
+        )
         
-        self.viewController.present(vc, animated: true, completion: nil)
+        self.viewController.present(
+                vc,
+                animated: true,
+                completion: nil
+        )
         
-        pluginResult = CDVPluginResult(status: CDVCommandStatus_OK)
+        pluginResult = CDVPluginResult(
+            status: CDVCommandStatus_OK
+        )
         
         self.commandDelegate!.send(
             pluginResult,
