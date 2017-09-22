@@ -1,11 +1,7 @@
 var exec = require('cordova/exec');
-
-var uplateMethods = {
-	echo: function(arg0, success, error) {
-  		exec(success, error, 'UpLate', 'echo', [arg0]);
-	};
-	show: function() {
-    	exec(null, null, 'UpLate', 'show', null);
-	};
-};
-module.exports = uplateMethods
+	exports.echo = function(arg0, success, error) {
+  		cordova.exec(success, error, 'UpLate', 'echo', [arg0]);	
+  	};
+	exports.show = function() {
+    	cordova.exec(null, null, 'UpLate', 'show', null);
+    };
